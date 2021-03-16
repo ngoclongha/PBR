@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="analysisWorkFlow.frmFromSAP">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="analysisWorkFlow.frmFromSAP.strNode">
+        <TypeIdentifier>
+          <NewMemberFileName>frmFromSAP.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="analysisWorkFlow.frmFromSAP.strLink">
+        <TypeIdentifier>
+          <NewMemberFileName>frmFromSAP.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="analysisWorkFlow.frmFromSAP.strNetwork">
+        <TypeIdentifier>
+          <NewMemberFileName>frmFromSAP.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gAABAAICAqAIAJAABgSACAACgEAACECAADAAAgRAEAA=</HashCode>
+      <FileName>frmFromSAP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9011344F-0041-4AD3-9FFC-72711CD8836D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gProAnalyzer</RootNamespace>
+    <AssemblyName>gProAnalyzer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>F:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Excel">
+      <HintPath>..\..\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go, Version=5.1.0.4, Culture=neutral, PublicKeyToken=a4e3b7b70161cfe8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Northwoods.Go.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Draw, Version=5.1.0.4, Culture=neutral, PublicKeyToken=a4e3b7b70161cfe8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Northwoods.Go.Draw.DLL</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Instruments, Version=5.1.0.4, Culture=neutral, PublicKeyToken=a4e3b7b70161cfe8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Northwoods.Go.Instruments.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Layout, Version=5.1.0.4, Culture=neutral, PublicKeyToken=a4e3b7b70161cfe8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Northwoods.Go.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Pdf, Version=5.1.0.4, Culture=neutral, PublicKeyToken=a4e3b7b70161cfe8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Northwoods.Go.Pdf.DLL</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Svg, Version=5.1.0.4, Culture=neutral, PublicKeyToken=a4e3b7b70161cfe8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Northwoods.Go.Svg.DLL</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Xml, Version=5.1.0.4, Culture=neutral, PublicKeyToken=a4e3b7b70161cfe8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Northwoods.Go.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dashboard_Experiment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Experiment.Designer.cs">
+      <DependentUpon>Dashboard_Experiment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowFullModel -Debug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowFullModel -Debug.designer.cs">
+      <DependentUpon>frmShowFullModel -Debug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowFullModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowFullModel.designer.cs">
+      <DependentUpon>frmShowFullModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnalysisNetwork_SESE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnalysisNetwork_SESE.designer.cs">
+      <DependentUpon>frmAnalysisNetwork_SESE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBasicSimulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBasicSimulation.Designer.cs">
+      <DependentUpon>frmBasicSimulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EPML2NET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EPML2NET.Designer.cs">
+      <DependentUpon>EPML2NET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMakeNetwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMakeNetwork.Designer.cs">
+      <DependentUpon>frmMakeNetwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnalysisNetwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnalysisNetwork.Designer.cs">
+      <DependentUpon>frmAnalysisNetwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFromIBM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFromIBM.Designer.cs">
+      <DependentUpon>frmFromIBM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFromSAP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFromSAP.Designer.cs">
+      <DependentUpon>frmFromSAP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain_TEST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain_TEST.Designer.cs">
+      <DependentUpon>frmMain_TEST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProcessQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProcessQuery.Designer.cs">
+      <DependentUpon>frmProcessQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFilterOutSound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFilterOutSound.Designer.cs">
+      <DependentUpon>frmFilterOutSound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplitModels_Rigids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplitModels_Rigids.Designer.cs">
+      <DependentUpon>frmSplitModels_Rigids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplitModels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplitModels.Designer.cs">
+      <DependentUpon>frmSplitModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functionalities\DominanceIdentification.cs" />
+    <Compile Include="Functionalities\IndexingPM.cs" />
+    <Compile Include="Functionalities\PolygonIdentification.cs" />
+    <Compile Include="Functionalities\ProcessQuery.cs" />
+    <Compile Include="Functionalities\VerificationG.cs" />
+    <Compile Include="GraphVariables\clsDAPST.cs" />
+    <Compile Include="GraphVariables\clsEdge.cs" />
+    <Compile Include="GraphVariables\clsError.cs" />
+    <Compile Include="GraphVariables\clsGraph.cs" />
+    <Compile Include="GraphVariables\clsHWLS.cs" />
+    <Compile Include="GraphVariables\clsLoop.cs" />
+    <Compile Include="GraphVariables\clsNode.cs" />
+    <Compile Include="GraphVariables\clsSESE.cs" />
+    <Compile Include="GraphVariables\clsLoopDAG.cs" />
+    <Compile Include="GraphVariables\clsRepository.cs" />
+    <Compile Include="HiPerfTimer.cs" />
+    <Compile Include="Functionalities\LoopIdentification.cs" />
+    <Compile Include="Functionalities\NodeSplittingType1.cs" />
+    <Compile Include="Functionalities\NodeSplittingType2.cs" />
+    <Compile Include="Functionalities\NodeSplittingType3.cs" />
+    <Compile Include="Preprocessing\clsExtendNetwork.cs" />
+    <Compile Include="Run_Analysis_SESE.cs" />
+    <Compile Include="Run_Analysis_Verification.cs" />
+    <Compile Include="Testing.cs" />
+    <Compile Include="Ultilities\AnalyseBehavior_InstF.cs" />
+    <Compile Include="Ultilities\AnalyseBhR_InstF_Labeled.cs" />
+    <Compile Include="Ultilities\checkGraph.cs" />
+    <Compile Include="Ultilities\clsFindNodeInfo.cs" />
+    <Compile Include="Preprocessing\clsLoadGraph.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="clsMakeNetwork.cs" />
+    <Compile Include="clsAnaysisNetwork.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Functionalities\SESEIdentification.cs" />
+    <Compile Include="Functionalities\UntanglingIL.cs" />
+    <Compile Include="Ultilities\copyLoop.cs" />
+    <Compile Include="Ultilities\copySESE.cs" />
+    <Compile Include="Ultilities\extendGraph.cs" />
+    <Compile Include="Ultilities\findConcurrencyEntriesIL.cs" />
+    <Compile Include="Ultilities\findIntersection.cs" />
+    <Compile Include="Ultilities\findNodeInLoop.cs" />
+    <Compile Include="Ultilities\findReachNode.cs" />
+    <Compile Include="Ultilities\findLabelSimilarity.cs" />
+    <Compile Include="Ultilities\findUnion.cs" />
+    <Compile Include="Ultilities\makeInstanceFlow.cs" />
+    <Compile Include="Ultilities\makeNestingForest.cs" />
+    <Compile Include="Ultilities\makeSubNetwork.cs" />
+    <Compile Include="Ultilities\mappingGraph.cs" />
+    <Compile Include="Ultilities\recordData.cs" />
+    <Compile Include="Ultilities\reduceGraph.cs" />
+    <Compile Include="Ultilities\searchGraph.cs" />
+    <EmbeddedResource Include="Dashboard_Experiment.resx">
+      <DependentUpon>Dashboard_Experiment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnalysisNetwork.resx">
+      <DependentUpon>frmAnalysisNetwork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowFullModel -Debug.resx">
+      <DependentUpon>frmShowFullModel -Debug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowFullModel.resx">
+      <DependentUpon>frmShowFullModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnalysisNetwork_SESE.resx">
+      <DependentUpon>frmAnalysisNetwork_SESE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBasicSimulation.resx">
+      <DependentUpon>frmBasicSimulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFromIBM.resx">
+      <DependentUpon>frmFromIBM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EPML2NET.resx">
+      <DependentUpon>EPML2NET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFromSAP.resx">
+      <DependentUpon>frmFromSAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain_TEST.resx">
+      <DependentUpon>frmMain_TEST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcessQuery.resx">
+      <DependentUpon>frmProcessQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFilterOutSound.resx">
+      <DependentUpon>frmFilterOutSound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplitModels_Rigids.resx">
+      <DependentUpon>frmSplitModels_Rigids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplitModels.resx">
+      <DependentUpon>frmSplitModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-youtube-play-button-computer-icons-play-button-5ac41135e7d7f3.4614083915227989019496.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-youtube-play-button-computer-icons-play-button-5ac411361103f5.4688314415227989020697.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clear-symbol-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClearIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraphDB-FA-big-hero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

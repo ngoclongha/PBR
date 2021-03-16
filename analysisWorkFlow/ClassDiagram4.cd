@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="analysisWorkFlow.frmAnalysisNetwork">
+    <Position X="5.25" Y="0.5" Width="4.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>9VCjQAFAgCEgyDwmmALgoAD+A7LDOTDncFXgYQBFueg=</HashCode>
+      <FileName>frmAnalysisNetwork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="analysisWorkFlow.frmSimulation">
+    <Position X="5.5" Y="5.25" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QUAAAAAEoSAEABAMAiCICgACAEQAAEAAA1ABBABAEIg=</HashCode>
+      <FileName>frmSimulation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="analysisWorkFlow.clsAnaysisNetwork">
+    <Position X="0.5" Y="0.5" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="analysisWorkFlow.clsAnaysisNetwork.strBlock" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsAnaysisNetwork.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="analysisWorkFlow.clsAnaysisNetwork.strLoop" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsAnaysisNetwork.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="analysisWorkFlow.clsAnaysisNetwork.strLink" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsAnaysisNetwork.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="analysisWorkFlow.clsAnaysisNetwork.strError" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsAnaysisNetwork.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="analysisWorkFlow.clsAnaysisNetwork.strNode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsAnaysisNetwork.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="analysisWorkFlow.clsAnaysisNetwork.strSESEInform" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsAnaysisNetwork.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="analysisWorkFlow.clsAnaysisNetwork.strNetwork" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsAnaysisNetwork.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="analysisWorkFlow.clsAnaysisNetwork.strSESE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsAnaysisNetwork.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="analysisWorkFlow.clsAnaysisNetwork.strLoopInform" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsAnaysisNetwork.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>3j5UrYHcthhKcRkYpkV4KJZIKkAR7M2AQge6BSQAgV0=</HashCode>
+      <FileName>clsAnaysisNetwork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
