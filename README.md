@@ -10,7 +10,7 @@ On Developing
   
 Files Including
 -----------  
-  1. Source code of PBR and the gProAnalyzer tool
+  1. Source code of PBR and the gProAnalyzer toolset
       * Source code of PBR, which is a part of gProAnalyzer developed by BPM Lab, Inje University, for process modeling analysis [1: https://doi.org/10.1016/j.datak.2014.11.003].           
   2. README.md provides:
       * A couple screenshots of the program, 
@@ -22,7 +22,7 @@ Files Including
 
 How to use:
 ------------
- - Clone the source code using visual studio
+ - Clone the source code using Microsoft Visual Studio
  - Click Debug to interact with the PBR UI.
  - Download the sample dataset "Sound_Acyclic_EPC_414.zip" for testing
  - The experiment section will store the output file to F:/ drive.
