@@ -16,7 +16,7 @@ Files Including
       * A couple screenshots of the program, 
       * System requirement of the program, and
       * User manual of the program.
-  3. SampleSAPmodels
+  3. Sample SAP models
       * contains 414 SAP EPC reference models   
 
 
@@ -24,7 +24,7 @@ How to use:
 ------------
  - Clone the source code using visual studio
  - Click Debug to interact with the PBR UI.
- - Download the same dataset Sound_Acyclic_EPC_414.zip testing
+ - Download the sample dataset "Sound_Acyclic_EPC_414.zip" for testing
  - The experiment section will store the output file to F:/ drive.
 
 System Requirements:
