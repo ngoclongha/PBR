@@ -33,9 +33,13 @@ System Requirements:
  - Windows OS
  - DotNet Framework 4.5 or higher
 
-Contributors:
+Contributors of gProAnalyzer toolset:
 ------------
  - Yongsun Choi, Prof. Dr. (*BPM Laboratory Director*)
  - N. Long Ha, PhD Student (*BPM Lab member*)
  - Choel Min Joo, Prof. Dr., and
  - Pauline Kongsunwan, Prof. Dr. (*BPM Lab member*)
+
+Contributors of PBR:
+------------
+ - N. Long Ha, PhD Student (*BPM Lab member*)
