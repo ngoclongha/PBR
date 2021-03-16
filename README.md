@@ -36,6 +36,6 @@ System Requirements:
 Contributors:
 ------------
  - Yongsun Choi, Prof. Dr. (*BPM Laboratory Director*)
- - N.Long Ha, PhD Student (*BPM Lab member*)
+ - N. Long Ha, PhD Student (*BPM Lab member*)
  - Choel Min Joo, Prof. Dr., and
  - Pauline Kongsunwan, Prof. Dr. (*BPM Lab member*)
