@@ -11,7 +11,7 @@ On Developing
 Files Including
 -----------  
   1. Source code of PBR and the gProAnalyzer tool
-      * Source code of PBR, which is a part of gProAnalyzer developed by BPM Lab, Inje University, for process modeling verification [1: https://doi.org/10.1016/j.datak.2014.11.003].           
+      * Source code of PBR, which is a part of gProAnalyzer developed by BPM Lab, Inje University, for process modeling analysis [1: https://doi.org/10.1016/j.datak.2014.11.003].           
   2. README.md provides:
       * A couple screenshots of the program, 
       * System requirement of the program, and
