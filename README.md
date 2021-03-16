@@ -20,7 +20,6 @@ File Including
       * contains 414 SAP EPC reference models   
 
 
-Sound_Acyclic_EPC_414.zip
 How to use:
 ------------
  - Clone the source code using visual studio
