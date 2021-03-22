@@ -318,11 +318,11 @@
             // 
             // b_indexTime
             // 
-            this.b_indexTime.Location = new System.Drawing.Point(74, 19);
+            this.b_indexTime.Location = new System.Drawing.Point(62, 19);
             this.b_indexTime.Name = "b_indexTime";
-            this.b_indexTime.Size = new System.Drawing.Size(75, 39);
+            this.b_indexTime.Size = new System.Drawing.Size(87, 39);
             this.b_indexTime.TabIndex = 1;
-            this.b_indexTime.Text = "IndexTime";
+            this.b_indexTime.Text = "Pre-processing Time";
             this.b_indexTime.UseVisualStyleBackColor = true;
             this.b_indexTime.Click += new System.EventHandler(this.b_indexTime_Click);
             // 
