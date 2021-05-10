@@ -3,7 +3,7 @@
 On Developing
 -----------  
   - This demo is written in C# under .Net 4.5 framework
-  - The gProAnalyzer tool set provide the user interface for the PBR
+  - The gProAnalyzer tool set provides the user interface for the PBR
   - The prototype of PBR is released as a part of the gProAnalyzer toolset and fully tested with 604 SAP EPC reference models
   - The bug/glitch fixing and updates will be released
   - The final tool is subjected to change without notice
